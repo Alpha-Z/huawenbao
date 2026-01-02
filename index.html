@@ -135,8 +135,13 @@
     <p class="text-white">乐知教育科技 Lerge Edtech Pte. Ltd. | UEN: 202431703H</p>
 
     <!-- Copyright Notice -->
-    <p>&copy; 2024 Lerge Edtech Pte. Ltd. All rights reserved.</p>
+    <p>&copy; <span id="current-year"></span> Lerge Edtech Pte. Ltd. All rights reserved.</p>
   </footer>
+
+  <script>
+      // 获取当前年份并填充到指定 ID 的元素中
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </div>
 
 <!-- <script src="./assets/dist/js/bootstrap.bundle.min.js"></script> -->
