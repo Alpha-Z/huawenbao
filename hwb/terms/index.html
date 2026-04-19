@@ -1,42 +1,212 @@
-<h2><strong>Terms of Use (EULA)</strong></h2>
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="dark"> <head>
+    <script src="../../color-modes.js"></script>
 
-<p><strong>General</strong></p>
-<p>This Terms of Use Agreement ("Agreement") is a legal agreement between you ("User" or "you") and Lerge Edtech Pte. Ltd. ("we" or "us"), the developer and owner of the "huawenbao"(华文宝) mobile application (the "App").</p>
-<p>By accessing or using the App, you agree to be bound by the terms and conditions of this Agreement. If you do not agree to the terms of this Agreement, do not access or use the App.</p>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Terms of Use - Lerge Edtech">
+    <meta name="author" content="Lerge Edtech Pte. Ltd.">
+    <title>Terms of Use - Lerge Edtech</title>
 
-<p><strong>Intellectual Property</strong></p>
-<p>The App and all content and materials contained in the App, including without limitation, text, graphics, software, images, designs, and trademarks, are owned or licensed by Lerge Edtech Pte. Ltd. and are protected by applicable intellectual property and other laws.</p>
-<p>You agree not to copy, modify, distribute, sell, or lease any part of the App or any content or materials contained in the App, unless expressly authorized by us in writing.</p>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="../../favicon/favicon.ico">
 
-<p><strong>Auto-Renewable Subscriptions</strong></p>
-<p>The App offers auto-renewable subscriptions that provide access to premium features and content. By subscribing, you agree to pay the subscription fees and any applicable taxes on a recurring basis until you cancel your subscription.</p>
-<p>Subscriptions will automatically renew at the end of each subscription period, unless you cancel your subscription before the end of the current period. The subscription of a new grade will not result in automatic cancellation of previous subscriptions. You can manage your subscriptions and turn off automatic renewal in your account settings.</p>
-<p>You should make In-App Purchase(IAP) with the same Apple ID for one account. Do not make payment with a different Apple ID. Do not use the same Apple ID when signing up for multiple accounts, unless the old accounts will not be used any more. We cannot take responsibility for the app or IAP not working at full functionality if you use a different Apple ID to make payment, or use the same Apple ID for multiple accounts.</p>
+    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../cover.css" rel="stylesheet">
 
-<p><strong>Third-party Services</strong></p>
-<p>The app does use third-party services that declare their Terms and Conditions.</p>
-<p>Link to Terms and Conditions of third-party service providers used by the app</p>
-<ul>
-<li><a href="https://firebase.google.com/terms/analytics">Google Analytics for Firebase</a></li>
-<li><a href="https://firebase.google.com/terms/crashlytics">Firebase Crashlytics</a></li>
-</ul>
+    <style>
+      /* ⚡️ 核心修复：移除单屏高度限制，确保背景颜色统一 */
+      html, body {
+        height: auto !important; 
+        min-height: 100%;
+        background-color: #212529 !important; /* 统一底色，消除断层 */
+      }
+      
+      body {
+        display: block !important; /* 覆盖 flex 布局，防止长页面溢出错误 */
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
 
-<p><strong>Disclaimer of Warranties</strong></p>
-<p>The App and all content and materials contained in the App are provided on an "as is" and "as available" basis without warranty of any kind, express or implied. We do not warrant that the App will meet your requirements or be uninterrupted, error-free, or free from harmful components.</p>
-<p>You should be aware that there are certain things that we will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi or provided by your mobile network provider, but we cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.</p>
-<p>If you’re using the app outside of an area with Wi-Fi, you should remember that the terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third-party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.</p>
+      .cover-container {
+        max-width: 50rem; /* 限制宽度，提升长文本阅读体验 */
+        margin-right: auto;
+        margin-left: auto;
+      }
 
-<p><strong>Limitation of Liability</strong></p>
-<p>In no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, lost profits or business interruption, arising out of or in connection with your use of the App or any content or materials contained in the App.</p>
-<p>It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the App won’t work properly or at all.</p>
+      /* 文本容器：增加悬浮感与专业感 */
+      .content-wrapper {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 40px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
 
-<p><strong>Termination</strong></p>
-<p>We may terminate this Agreement at any time without notice if you breach any of the terms and conditions of this Agreement. Upon termination, you must immediately stop using the App and delete it from your device.</p>
+      .legal-text {
+        text-align: left;
+        line-height: 1.7; /* 稍微增加行高，提升易读性 */
+        color: rgba(255, 255, 255, 0.85);
+      }
 
-<p><strong>Changes to This Terms of Use</strong></p>
-<p>We may modify this Agreement at any time, and such modifications shall be effective immediately upon posting the modified Agreement. Your continued use of the App following any such modification constitutes your acceptance of the modified Agreement.</p>
+      .legal-text h2 {
+        color: #fff;
+        margin-top: 2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 0.5rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
 
-<p><strong>Contact Us</strong></p>
-<p>If you have any questions or concerns regarding this Agreement, please contact us at info@lergeedtech.com.</p>
+      .legal-text a {
+        color: #0d6efd;
+        text-decoration: none;
+      }
 
-<p>This Agreement is effective as of 2024-09-12.</p>
+      .legal-text a:hover {
+        text-decoration: underline;
+      }
+
+      /* 针对页头导航的修正：对齐主页风格 */
+      .nav-masthead .nav-link {
+        color: rgba(255, 255, 255, .5);
+        border-bottom: .25rem solid transparent;
+        padding: .25rem 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .nav-masthead .nav-link:hover {
+        border-bottom-color: rgba(255, 255, 255, .25);
+      }
+
+      .nav-masthead .active {
+        color: #fff;
+        border-bottom-color: #fff;
+      }
+
+      /* 页脚微调 */
+      footer {
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      @media (max-width: 768px) {
+        .content-wrapper { 
+          padding: 20px; 
+          margin: 1.5rem 0.5rem; 
+        }
+        .nav-masthead .nav-link {
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="text-bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">乐知教育科技</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link fw-bold py-1 px-0" href="../../index.html">Home</a>
+        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3 d-flex flex-column align-items-center">
+    <div class="content-wrapper">
+      <h1 class="mb-4 text-center">Terms of Use (EULA)</h1>
+      
+      <div class="legal-text">
+        <section class="mb-4">
+          <h2>General</h2>
+          <p>This Terms of Use Agreement ("Agreement") is a legal agreement between you ("User" or "you") and <strong>Lerge Edtech Pte. Ltd.</strong> ("we" or "us"), the developer and owner of the "huawenbao" (华文宝) mobile application (the "App").</p>
+          <p>By accessing or using the App, you agree to be bound by the terms and conditions of this Agreement. If you do not agree to the terms of this Agreement, do not access or use the App.</p>
+        </section>
+
+        <section class="mb-4">
+          <h2>Intellectual Property</h2>
+          <p>The App and all content and materials contained in the App, including without limitation, text, graphics, software, images, designs, and trademarks, are owned or licensed by Lerge Edtech Pte. Ltd. and are protected by applicable intellectual property and other laws.</p>
+          <p>You agree not to copy, modify, distribute, sell, or lease any part of the App or any content or materials contained in the App, unless expressly authorized by us in writing.</p>
+        </section>
+
+        <section class="mb-4">
+          <h2>Auto-Renewable Subscriptions</h2>
+          <p>The App offers auto-renewable subscriptions (e.g., "All-Access Elite") providing full access to all grade levels and premium features. By subscribing, you agree to pay the recurring fees until cancellation.</p>
+          <p>Subscriptions will automatically renew at the end of each subscription period, unless you cancel your subscription or switch to a different plan before the end of the current period. You can manage your subscriptions and turn off automatic renewal in your account settings.</p>
+          <p>You should make In-App Purchase (IAP) with the same Apple ID for one account. Do not make payment with a different Apple ID. Do not use the same Apple ID when signing up or signing in for multiple accounts, unless the old accounts will not be used any more. We cannot take responsibility for the app or IAP not working at full functionality if you used a different Apple ID to make payment, or use the same Apple ID for multiple accounts.</p>
+          <p><strong>Minors:</strong> Users under the age of 18 must obtain parental or legal guardian consent before making any In-App Purchases.</p>
+        </section>
+
+        <section class="mb-4">
+          <h2>AI Service</h2>
+          <p>The App includes an AI-powered assistant (powered by third-party large language models). While designed for educational purposes, <strong>the AI may occasionally provide inaccurate or incomplete information.</strong></p>
+          <p>You agree that:</p>
+          <ul>
+            <li>AI-generated content is for learning reference only and does not constitute official academic advice.</li>
+            <li>We are not liable for any errors, omissions, or misunderstandings resulting from AI responses.</li>
+            <li>Users are prohibited from attempting to bypass AI safety filters or using the AI for harmful, illegal, or non-educational purposes.</li>
+          </ul>
+        </section>
+
+        <section class="mb-4">
+          <h2>Third-party Services</h2>
+          <p>The app utilizes third-party services to provide core functionalities. Please review their terms:</p>
+          <ul>
+            <li><a href="https://www.alibabacloud.com/help/en/legal/latest/alibaba-cloud-international-website-product-terms-of-service-v-3-8-0" target="_blank">Alibaba Cloud (AI Service Provider)</a></li>
+            <li><a href="https://firebase.google.com/terms/crashlytics" target="_blank">Firebase Crashlytics</a></li>
+            <li><a href="https://www.google.com/analytics/terms/" target="_blank">Google Analytics</a></li>
+          </ul>
+        </section>
+
+        <section class="mb-4">
+          <h2>Disclaimer of Warranties</h2>
+          <p>The App and all content and materials contained in the App are provided on an "as is" and "as available" basis without warranty of any kind, express or implied. We do not warrant that the App will meet your requirements or be uninterrupted, error-free, or free from harmful components.</p>
+          <p>Certain functions of the app will require an active internet connection (Wi-Fi or mobile data). We cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi or data allowance.</p>
+          <p>If you use the app outside of Wi-Fi range, roaming charges or other third-party data charges may apply. By using the app, you accept responsibility for any such charges.</p>
+        </section>
+
+        <section class="mb-4">
+          <h2>Limitation of Liability</h2>
+          <p>In no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of the App.</p>
+          <p>It’s your responsibility to keep your device secure. We recommend that you do not <strong>jailbreak or root</strong> your phone, as it could make your phone vulnerable to malware, compromise security features, and cause the App to malfunction.</p>
+        </section>
+
+        <section class="mb-4">
+          <h2>Termination</h2>
+          <p>We may terminate this Agreement at any time without notice if you breach any terms. Upon termination, you must immediately stop using the App and delete it from your device.</p>
+        </section>
+
+        <section class="mb-4">
+          <h2>Changes to This Terms of Use</h2>
+          <p>We may modify this Agreement at any time. Your continued use of the App following any modification constitutes your acceptance of the modified Agreement.</p>
+        </section>
+
+        <section class="mb-4">
+          <h2>Contact Us</h2>
+          <p>If you have any questions, please contact us at: <a href="mailto:info@lergeedtech.com">info@lergeedtech.com</a></p>
+          <p class="mt-3 text-white-50">Effective Date: 2026-04-20</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-auto text-white-50 text-center">
+    <p class="text-white small">乐知教育科技 Lerge Edtech Pte. Ltd. | UEN: 202431703H</p>
+    <p class="small">&copy; <span id="current-year"></span> Lerge Edtech Pte. Ltd. All rights reserved.</p>
+  </footer>
+
+  <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</div>
+
+</body>
+</html>
